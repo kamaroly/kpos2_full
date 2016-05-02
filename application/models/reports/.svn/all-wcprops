@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports
+END
+detailed_receivings.php
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/detailed_receivings.php
+END
+summary_items.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_items.php
+END
+summary_taxes.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_taxes.php
+END
+summary_customers.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_customers.php
+END
+summary_categories.php
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_categories.php
+END
+detailed_sales.php
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/detailed_sales.php
+END
+summary_suppliers.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_suppliers.php
+END
+specific_customer.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/specific_customer.php
+END
+inventory_summary.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/inventory_summary.php
+END
+report.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/report.php
+END
+summary_payments.php
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_payments.php
+END
+inventory_low.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/inventory_low.php
+END
+summary_employees.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_employees.php
+END
+summary_sales.php
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_sales.php
+END
+specific_employee.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/specific_employee.php
+END
+summary_discounts.php
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/opensourcepos/!svn/ver/24/application/models/reports/summary_discounts.php
+END

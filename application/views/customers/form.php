@@ -1,0 +1,108 @@
+<?php
+echo form_open('customers/save/'.$person_info->person_id,array('id'=>'customer_form'));
+?>
+<?php // check if it's from saling module?>
+
+
+<div id="required_fields_message"><?php echo $this->lang->line('common_fields_required_message'); ?></div>
+<ul id="error_message_box"></ul>
+<fieldset id="customer_basic_info">
+<legend><?php echo $this->lang->line("customers_basic_information"); ?></legend>
+
+<?php if(strpos(strtolower($_SERVER['HTTP_REFERER']), "/sales")):?>
+<div class="field_row clearfix">	
+<?php echo form_label($this->lang->line('customers_names').':', 'names'); ?>
+	<div class='form_field'>
+	<?php echo form_input(array(
+		'name'=>'names',
+		'id'=>'names',
+		'value'=>$person_info->account_number)
+	);?>
+	</div>
+</div>
+<?php endif;?>
+
+<?php $this->load->view("people/form_basic_info"); ?>
+
+
+<?php if(!strpos(strtolower($_SERVER['HTTP_REFERER']), "/sales")):?>
+<div class="field_row clearfix">	
+<?php echo form_label($this->lang->line('customers_account_number').':', 'account_number'); ?>
+	<div class='form_field'>
+	<?php echo form_input(array(
+		'name'=>'account_number',
+		'id'=>'account_number',
+		'value'=>$person_info->account_number)
+	);?>
+	</div>
+</div>
+
+
+<div class="field_row clearfix">	
+<?php echo form_label($this->lang->line('customers_taxable').':', 'taxable'); ?>
+	<div class='form_field'>
+	<?php echo form_checkbox('taxable', '1', $person_info->taxable == '' ? TRUE : (boolean)$person_info->taxable);?>
+	</div>
+</div>
+<?php endif;?>
+<?php
+echo form_submit(array(
+	'name'=>'submit',
+	'id'=>'submit',
+	'value'=>$this->lang->line('common_submit'),
+	'class'=>'btn btn-small btn-primary')
+);
+?>
+</fieldset>
+
+<?php 
+
+echo form_close();
+?>
+<script type='text/javascript'>
+
+//validation and submit handling
+$(document).ready(function()
+{
+	$('#customer_form').validate({
+		submitHandler:function(form)
+		{
+			$(form).ajaxSubmit({
+			success:function(response)
+			{
+				tb_remove();
+				post_person_form_submit(response);
+			},
+			dataType:'json'
+		});
+
+		},
+		errorLabelContainer: "#error_message_box",
+ 		wrapper: "li",
+		rules: 
+		{
+			first_name: "required",
+			last_name: "required",
+    		email: "email",
+    		tin: {
+               required: true,
+               number:true,
+               minlength: 9,
+               maxlength: 9
+                },
+   		},
+		messages: 
+		{
+     		first_name: "<?php echo $this->lang->line('common_first_name_required'); ?>",
+     		last_name: "<?php echo $this->lang->line('common_last_name_required'); ?>",
+     		tin: {
+               required: "<?php echo $this->lang->line('config_tin_required'); ?>",
+               number:   "<?php echo $this->lang->line('config_tin_number'); ?>",
+               minlength:"<?php echo $this->lang->line('config_tin_must_be_nine'); ?>",
+               maxlength: "<?php echo $this->lang->line('config_tin_must_be_nine'); ?>"
+                },
+     		email: "<?php echo $this->lang->line('common_email_invalid_format'); ?>"
+		}
+	});
+});
+</script>

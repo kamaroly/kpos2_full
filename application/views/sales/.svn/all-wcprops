@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/opensourcepos/!svn/ver/54/application/views/sales
+END
+suspended.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/opensourcepos/!svn/ver/24/application/views/sales/suspended.php
+END
+receipt.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/opensourcepos/!svn/ver/40/application/views/sales/receipt.php
+END
+delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/opensourcepos/!svn/ver/24/application/views/sales/delete.php
+END
+receipt_email.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/opensourcepos/!svn/ver/24/application/views/sales/receipt_email.php
+END
+register.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/opensourcepos/!svn/ver/54/application/views/sales/register.php
+END
+edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/opensourcepos/!svn/ver/24/application/views/sales/edit.php
+END

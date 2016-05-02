@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/opensourcepos/!svn/ver/50/application/views/partial
+END
+footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/opensourcepos/!svn/ver/50/application/views/partial/footer.php
+END
+footer_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/opensourcepos/!svn/ver/24/application/views/partial/footer_excel.php
+END
+header.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/opensourcepos/!svn/ver/24/application/views/partial/header.php
+END
+header_excel.php
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/opensourcepos/!svn/ver/24/application/views/partial/header_excel.php
+END

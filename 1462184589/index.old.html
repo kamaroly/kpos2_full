@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from vadimg.com/twitter-bootstrap-wizard-example/examples/basic-progressbar.html by HTTrack Website Copier/3.x [XR&CO'2013], Mon, 24 Feb 2014 05:14:39 GMT -->
+<head>
+    <title>Kamaro Point of Sale Installer</title>
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/prettify.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class='container'>
+		
+		<div class="span12">
+			<section id="wizard">
+			  <div class="page-header" style="background:#2b61a9;color:#FFFFFF;">
+	            <h1>Kamaro Point of Sale Installation Wizard</h1>
+	          </div>
+	           <form id="install_form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+				<div id="rootwizard">
+					<div class="navbar ">
+					  <div class="navbar-inner primary">
+					    <div class="container">
+					<ul>
+					  	<li><a href="#tab1" data-toggle="tab">Database settings</a></li>
+						<li><a href="#tab2" data-toggle="tab">Account Setup</a></li>
+						<li><a href="#tab3" data-toggle="tab">Application Configuration</a></li>
+					</ul>
+					 </div>
+					 <div>  <?php if(is_writable($db_config_path)):?>
+
+		                     <?php if(isset($message)) {echo '<p class="alert alert-danger">' . $message . '</p>';}?></div>
+					  </div>
+					</div>
+					<div id="bar" class="progress progress-striped active">
+					  <div class="bar"></div>
+					</div>
+					<div class="tab-content">
+					    <div class="tab-pane" id="tab1">
+					      <legend>Database settings</legend>
+                          <label for="hostname">Hostname</label><input type="text" id="hostname" value="localhost" class="input_text" name="hostname" />
+                          <label for="username">Username</label><input type="text" id="username" class="input_text" name="username" />
+                          <label for="password">Password</label><input type="password" id="password" class="input_text" name="password" />
+                          <label for="database">Database Name</label><input type="text" id="database" class="input_text" name="database" />
+                   
+					    </div>
+					    <div class="tab-pane" id="tab2">
+					      2
+					    </div>
+						<div class="tab-pane" id="tab3">
+							3
+
+							<input type="submit" value="Install" id="submit" class="btn btn-small btn-success" />
+					    </div>
+						<ul class="pager wizard">
+							<li class="previous"><a href="#" class="btn btn-small btn-inverse">Previous</a></li>
+						  	<li class="next"><a href="#" class="btn btn-small btn-inverse">Next</a></li>
+						</ul>
+					</div>	
+      <?php else: ?>
+      <p class="error">Please make the application/config/database.php file writable. <strong>Example</strong>:<br /><br /><code>chmod 777 application/config/database.php</code></p>
+	  <?php endif; ?>
+					 </form>
+				</div>
+			     
+				
+			</section>
+ 		</div>
+	</div>
+    <script src="assets/js/jquery-latest.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.bootstrap.wizard.js"></script>
+	<script src="assets/js/prettify.js"></script>
+	<script>
+	$(document).ready(function() {
+	  	$('#rootwizard').bootstrapWizard({onTabShow: function(tab, navigation, index) {
+			var $total = navigation.find('li').length;
+			var $current = index+1;
+			var $percent = ($current/$total) * 100;
+			$('#rootwizard').find('.bar').css({width:$percent+'%'});
+		}});	
+		window.prettyPrint && prettyPrint()
+	});	
+	</script>
+  </body>
+</html>

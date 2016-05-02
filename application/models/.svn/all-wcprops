@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svnroot/opensourcepos/!svn/ver/24/application/models
+END
+inventory.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/opensourcepos/!svn/ver/24/application/models/inventory.php
+END
+sale_suspended.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/opensourcepos/!svn/ver/24/application/models/sale_suspended.php
+END
+item.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/opensourcepos/!svn/ver/24/application/models/item.php
+END
+customer.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/opensourcepos/!svn/ver/24/application/models/customer.php
+END
+item_taxes.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/opensourcepos/!svn/ver/24/application/models/item_taxes.php
+END
+supplier.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/opensourcepos/!svn/ver/24/application/models/supplier.php
+END
+item_kit.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/opensourcepos/!svn/ver/24/application/models/item_kit.php
+END
+person.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/opensourcepos/!svn/ver/24/application/models/person.php
+END
+item_kit_items.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/opensourcepos/!svn/ver/24/application/models/item_kit_items.php
+END
+appconfig.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/opensourcepos/!svn/ver/24/application/models/appconfig.php
+END
+receiving.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/opensourcepos/!svn/ver/24/application/models/receiving.php
+END
+employee.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/opensourcepos/!svn/ver/24/application/models/employee.php
+END
+giftcard.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/opensourcepos/!svn/ver/24/application/models/giftcard.php
+END
+sale.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/opensourcepos/!svn/ver/24/application/models/sale.php
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/opensourcepos/!svn/ver/24/application/models/index.html
+END
+module.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/opensourcepos/!svn/ver/24/application/models/module.php
+END

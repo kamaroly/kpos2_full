@@ -1,0 +1,1 @@
+RewriteCond $1 !^(index.php|img|css|js|install|robots.txt|favicon.ico|update.php)
